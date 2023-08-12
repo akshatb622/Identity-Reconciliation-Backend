@@ -34,8 +34,8 @@ https://identity-reconciliation-backend.onrender.com/
     "email": "mcfly@hillvalley.edu",
     "linkedId": null,
     "linkPrecedence": "primary",
-    "createdAt": 2023-04-01 00:00:00.374+00,              
-    "updatedAt": 2023-04-01 00:00:00.374+00,              
+    "createdAt": "2023-04-01 00:00:00.374+00",              
+    "updatedAt": "2023-04-01 00:00:00.374+00",              
     "deletedAt": null
 }
 ```
@@ -51,11 +51,11 @@ https://identity-reconciliation-backend.onrender.com/
 1. Clone the repository on local.
 2. Run command: cd backend/ 
 3. Make a file with name .env and add the following lines to the file: <br>
-    +    PORT=<port of the backend server>
-    +    DATABASE_USER=<Name of your postgres user on local>
+    +    PORT=<'port of the backend server'>
+    +    DATABASE_USER=<'Name of your postgres user on local'>
     +    HOST=localhost  
-    +    DATABASE_NAME=<Name of the database name>
-    +    PASSWORD=<Your database password>
+    +    DATABASE_NAME=<'Name of the database in postgres'>
+    +    PASSWORD=<'Your database password'>
     +    DATABASE_PORT=5432 // default port of postgres server
 3. Run command: npm i
 4. Run command: npm run start-dev
