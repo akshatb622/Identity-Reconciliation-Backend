@@ -6,8 +6,8 @@ https://bitespeed.notion.site/Bitespeed-Backend-Task-Identity-Reconciliation-533
 
 # Tech Stack Used: 
 
-Framework and Language: Node.js, Express.js, Typescript
-Database(SQL Database): PostgreSQL
+1. Framework and Language: Node.js, Express.js, Typescript
+2. Database(SQL Database): PostgreSQL
 
 # Link to the live deployed API: 
 
@@ -29,7 +29,7 @@ https://identity-reconciliation-backend.onrender.com/
 
 ```json
 {
-	"id" : 1,                  
+	"id": 1,                  
     "phoneNumber": "123456",
     "email": "mcfly@hillvalley.edu",
     "linkedId": null,
