@@ -15,22 +15,30 @@ https://identity-reconciliation-backend.onrender.com/
 
 # API Documentation: 
 
-endpoint: /identify
-method: POST
-body(JSON payload): {
+1. endpoint: /identify
+2. method: POST
+3. body(JSON payload): <br> 
+```json
+{
     "email":"mcfly@hillvalley.edu",
     "phoneNumber":"123456"
 }
-reponse: {
-	id                   1                   
-    phoneNumber          "123456"
-    email                "mcfly@hillvalley.edu"
-    linkedId             null
-    linkPrecedence       "primary"
-    createdAt            2023-04-01 00:00:00.374+00              
-    updatedAt            2023-04-01 00:00:00.374+00              
-    deletedAt            null
+```
+
+4. reponse: <br>
+
+```json
+{
+	"id" : 1,                  
+    "phoneNumber": "123456",
+    "email": "mcfly@hillvalley.edu",
+    "linkedId": null,
+    "linkPrecedence": "primary",
+    "createdAt": 2023-04-01 00:00:00.374+00,              
+    "updatedAt": 2023-04-01 00:00:00.374+00,              
+    "deletedAt": null
 }
+```
 
 # Steps to Setup on local: 
 
@@ -42,13 +50,13 @@ reponse: {
 ## Steps: 
 1. Clone the repository on local.
 2. Run command: cd backend/ 
-3. Make a file with name .env and add the following lines to the file: 
-   3a.  PORT=<port of the backend server>
-        DATABASE_USER=<Name of your postgres user on local>
-        HOST=localhost  
-        DATABASE_NAME=<Name of the database name>
-        PASSWORD=<Your database password>
-        DATABASE_PORT=5432 // default port of postgres server
+3. Make a file with name .env and add the following lines to the file: <br>
+    +    PORT=<port of the backend server>
+    +    DATABASE_USER=<Name of your postgres user on local>
+    +    HOST=localhost  
+    +    DATABASE_NAME=<Name of the database name>
+    +    PASSWORD=<Your database password>
+    +    DATABASE_PORT=5432 // default port of postgres server
 3. Run command: npm i
 4. Run command: npm run start-dev
 
