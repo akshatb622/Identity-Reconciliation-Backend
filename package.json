@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "npx nodemon",
-    "build": "npm i && npx tsc -r dotenv/config ./build/index.js",
-    "start-prod": "node build/index.js"
+    "build": "npm i && npx tsc",
+    "start-prod": "node -r dotenv/config build/index.js"
   },
   "keywords": [],
   "author": "",
